@@ -6,7 +6,7 @@
  (resolution mm 100000)
  (unit mm)
  (structure
-  (boundary (rect pcb -142.21460 -5.67906 -50.26660 59.54020))
+  (boundary (rect pcb -136.67740 -5.67906 -28.27020 83.11140))
   (flip_style mirror_first)
   (layer TOP (type signal) (direction off))
   (layer I1 (type signal) (direction off))
@@ -39,7 +39,7 @@
    )
   )
   (rule
-   (width 0.76200)
+   (width 0.88900)
    (clearance 0.38100)
    (clearance 0.25400 (type wire_via))
    (clearance 0.25400 (type wire_smd))
@@ -51,14 +51,14 @@
   )
  )
  (placement
-  (component "SIL-100-10_ADS1115" (place ADS1115 -112.87960 56.89860 front 180))
-  (component "SIL-100-05_VELM6070" (place VELM6070 -64.54140 12.85240 front 0))
+  (component "SIL-100-10_ADS1115" (place ADS1115 -37.82260 80.46980 front 180))
+  (component "SIL-100-05_VELM6070" (place VELM6070 -134.03580 19.98980 front 0))
   (component "SIL-100-20_RASBPBERRY 3V" (place "RASBPBERRY 3V" -99.06000 50.82540 front 270
   ))
   (component "SIL-100-20_RASBPBERRY 5V" (place "RASBPBERRY 5V" -84.11160 50.82540 front -90
   ))
-  (component "SIL-100-03_SEN" (place SEN -52.90820 51.38420 front 180))
-  (component "SIL-100-04_GPS" (place GPS -139.57300 22.91080 front -90))
+  (component "SIL-100-03_SEN" (place SEN -118.59260 68.04660 front 0))
+  (component "SIL-100-04_GPS" (place GPS -33.70580 36.98240 front -90))
  )
  (library
   (image "SIL-100-10_ADS1115" (side front)
@@ -303,13 +303,13 @@
     (use_layer BOT)
     (use_via $VIA_POWER)
    )
-   (pins ADS1115-0 VELM6070-0 "RASBPBERRY 5V"-0 SEN-2 GPS-0)
+   (pins ADS1115-0 VELM6070-0 "RASBPBERRY 5V"-0 "RASBPBERRY 5V"-1 SEN-2 GPS-0)
   )
   (class POWER
    "GND"
    "VCC/VDD"
    (rule
-    (width 0.76200)
+    (width 0.88900)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))
@@ -332,7 +332,7 @@
    "{NC}"
    "{VOID}"
    (rule
-    (width 0.76200)
+    (width 0.88900)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))
@@ -345,10 +345,14 @@
   )
  )
  (wiring
-  (via PS0 -135.82900 44.41740 (net {NC-1}) (type protect))
-  (via PS0 -113.02900 44.41740 (net {NC-2}) (type protect))
-  (via PS0 -55.41080 22.80100 (net {NC-3}) (type protect))
-  (via PS0 -63.60160 22.73300 (net {NC-4}) (type protect))
+   (wire (path BOT 0.88900 -99.06000 2.56540 -91.44000 10.18540 -84.11160 10.18540) (net "GND")
+   (type protect))
+   (wire (path BOT 0.88900 -99.06000 20.34540 -99.06000 20.22951 -94.09589 15.26540 -84.11160 15.26540
+  ) (net "GND") (type protect))
+  (via PS0 -60.77200 67.98860 (net {NC-1}) (type protect))
+  (via PS0 -37.97200 67.98860 (net {NC-2}) (type protect))
+  (via PS0 -124.90520 29.93840 (net {NC-3}) (type protect))
+  (via PS0 -133.09600 29.87040 (net {NC-4}) (type protect))
   (via PS2 -99.20000 56.00000 (net {NC-5}) (type protect))
   (via PS2 -84.20000 55.90000 (net {NC-6}) (type protect))
   (via PS2 -65.10000 -3.50000 (net {NC-7}) (type protect))

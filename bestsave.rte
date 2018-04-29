@@ -116,41 +116,49 @@
    (Net #00000 
    (rule
    )
+   (wire (path BOT 88900  -11859260 6804660 -11859260 7600671 -5306260 7600671
+     -5306260 8046980)
+    (connect (terminal pin SEN-0) (terminal pin ADS1115-6))
+   )
    )
    (Net #00004 
    (rule
    )
-   (wire (path BOT 76200  -13957300 2037080 -10960943 2037080 -10960943 -127000
-     -9081535 -127000 -9081535 3329659 -8699500 3329659 -8699500 4066540
-     -8411160 4066540)
+   (wire (path BOT 88900  -3370580 3444240 -3048000 3444240 -3048000 2476500
+     -7590731 2476500 -7590731 4066540 -8411160 4066540)
     (connect (terminal pin GPS-1) (terminal pin "RASBPBERRY 5V"-4))
    )
    )
    (Net #00005 
    (rule
    )
-   (wire (path BOT 76200  -13957300 1783080 -11387996 1783080 -11387996 -254000
-     -8953500 -254000 -8953500 4320540 -8411160 4320540)
-    (connect (terminal pin GPS-2) (terminal pin "RASBPBERRY 5V"-3))
+   (wire (path BOT 88900  -8411160 4320540 -6780687 4320540 -6780687 2730500
+     -3175000 2730500 -3175000 3190240 -3370580 3190240)
+    (connect (terminal pin "RASBPBERRY 5V"-3) (terminal pin GPS-2))
    )
    )
    (Net #00007 
    (rule
    )
-   (wire (path BOT 76200  -9906000 4574540 -10223500 4574540 -10223500 4953000
-     -11795960 4953000 -11795960 5689860)
-    (connect (terminal pin "RASBPBERRY 3V"-2) (terminal pin ADS1115-2))
+   (wire (path BOT 88900  -4290260 8046980 -4290260 6286500 -8890000 6286500
+     -8890000 4574540 -9906000 4574540)
+    (connect (terminal pin ADS1115-2) (terminal pin "RASBPBERRY 3V"-2))
+   )
+   (wire (path BOT 88900  -9906000 4574540 -10795000 4574540 -10795000 1778000
+     -12895580 1778000 -12895580 1998980)
+    (connect (terminal pin "RASBPBERRY 3V"-2) (terminal pin VELM6070-2))
    )
    )
    (Net #00008 
    (rule
    )
-   (wire (path BOT 76200  -9906000 4828540 -9461500 4828540 -9461500 5334000
-     -5080000 5334000 -5080000 1758541 -5692140 1758541 -5692140 1285240)
-    (connect (terminal pin "RASBPBERRY 3V"-1) (terminal pin VELM6070-3))
-   )
-   (wire (path BOT 76200  -9906000 4828540 -12049960 4828540 -12049960 5689860)
+   (wire (path BOT 88900  -9906000 4828540 -9430358 4828540 -9430358 6540500
+     -4544260 6540500 -4544260 8046980)
     (connect (terminal pin "RASBPBERRY 3V"-1) (terminal pin ADS1115-3))
+   )
+   (wire (path BOT 88900  -9906000 4828540 -11176000 4828540 -11176000 2222500
+     -12641580 2222500 -12641580 1998980)
+    (connect (terminal pin "RASBPBERRY 3V"-1) (terminal pin VELM6070-3))
    )
    )
    (Net A1 
@@ -168,120 +176,114 @@
    (Net GND 
    (rule
    )
-   (wire (path BOT 76200  -12303960 5689860 -12303960 4066540 -9906000 4066540)
-    (connect (terminal pin ADS1115-4) (terminal pin "RASBPBERRY 3V"-4))
+   (wire (path BOT 88900  -4036260 8046980 -4036260 5270500 -8636000 5270500
+     -8636000 4574540)
+    (connect (terminal pin ADS1115-1) (terminal wire))
    )
-   (wire (path BOT 76200  -6200140 1285240 -6200140 1714500 -6169660 1714500
-     -6169660 3102929 -5544820 3102929 -5544820 5138420)
-    (connect (terminal pin VELM6070-1) (terminal pin SEN-1))
+   (wire (path BOT 88900  -4798260 8046980 -4798260 7175500 -11605260 7175500
+     -11605260 6804660)
+    (connect (terminal pin ADS1115-4) (terminal pin SEN-1))
    )
-   (wire (path BOT 76200  -8411160 4574540 -9080500 4574540 -9080500 4000500
-     -9715500 4000500)
-    (connect (terminal pin "RASBPBERRY 5V"-2) (terminal wire))
+   (wire (path BOT 88900  -3370580 2936240 -4813647 2936240 -4813647 4574540
+     -8411160 4574540)
+    (connect (terminal pin GPS-3) (terminal pin "RASBPBERRY 5V"-2))
    )
-   (wire (path BOT 76200  -9715500 4000500 -9715500 4064000)
-    (connect (terminal wire) (terminal wire))
-   )
-   (wire (path BOT 76200  -8191500 3558540 -8191500 4574540 -8411160 4574540)
-    (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-2))
-   )
-   (wire (path BOT 76200  -8411160 3558540 -8191500 3558540)
+   (wire (path BOT 88900  -8411160 3558540 -8191500 3558540 -8191500 2796540)
     (connect (terminal pin "RASBPBERRY 5V"-6) (terminal wire))
    )
-   (wire (path BOT 76200  -8191500 3558540 -8191500 3556000)
-    (connect (terminal wire) (terminal wire))
+   (wire (path BOT 88900  -8411160 3558540 -8699500 3558540 -8699500 4064000)
+    (connect (terminal pin "RASBPBERRY 5V"-6) (terminal wire))
    )
-   (wire (path BOT 76200  -9715500 4064000 -9715500 4066539 -9906000 4066539
-     -9906000 4066540)
-    (connect (terminal wire) (terminal pin "RASBPBERRY 3V"-4))
+   (wire (path BOT 88900  -9906000 2034540 -10414000 2034540 -10414000 1651000
+     -13149580 1651000 -13149580 1998980)
+    (connect (terminal pin "RASBPBERRY 3V"-12) (terminal pin VELM6070-1))
    )
-   (wire (path BOT 76200  -9715500 2032000 -9715500 4000500)
-    (connect (terminal wire) (terminal wire))
-   )
-   (wire (path BOT 76200  -6200140 1285240 -6200140 1079500 -8191500 1079500)
-    (connect (terminal pin VELM6070-1) (terminal wire))
-   )
-   (wire (path BOT 76200  -9715500 2032000 -9715500 256540 -9906000 256540)
-    (connect (terminal wire) (terminal pin "RASBPBERRY 3V"-19))
-   )
-   (wire (path BOT 76200  -8191500 1079500 -8191500 1018540 -8411160 1018540)
+   (wire (path BOT 88900  -8191500 1526540 -8191500 1018540 -8411160 1018540)
     (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-16))
    )
-   (wire (path BOT 76200  -8191500 1587500 -8191500 1079500)
+   (wire (path BOT 88900  -8699500 4064000 -8699500 4191000 -8636000 4191000
+     -8636000 4574540)
     (connect (terminal wire) (terminal wire))
    )
-   (wire (path BOT 76200  -8191500 1587500 -8191500 2730500)
+   (wire (path BOT 88900  -8699500 4064000 -9906000 4064000 -9906000 4066540)
+    (connect (terminal wire) (terminal pin "RASBPBERRY 3V"-4))
+   )
+   (wire (path BOT 88900  -8191500 1526540 -8191500 2796540)
     (connect (terminal wire) (terminal wire))
    )
-   (wire (path BOT 76200  -8191500 2758440 -8191500 2796540 -8411160 2796540)
+   (wire (path BOT 88900  -4798260 8046980 -4798260 8255000 -4036260 8255000
+     -4036260 8046980)
+    (connect (terminal pin ADS1115-4) (terminal pin ADS1115-1))
+   )
+   (wire (path BOT 88900  -8636000 4574540 -8411160 4574540)
+    (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-2))
+   )
+   (wire (path BOT 88900  -8191500 2796540 -8411160 2796540)
     (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-9))
    )
-   (wire (path BOT 76200  -8191500 3556000 -8191500 2758440)
-    (connect (terminal wire) (terminal wire))
+   (wire (path BOT 88900  -8411160 1526540 -8191500 1526540)
+    (connect (terminal pin "RASBPBERRY 5V"-14) (terminal wire))
    )
-   (wire (path BOT 76200  -8191500 2758440 -8191500 2730500)
-    (connect (terminal wire) (terminal wire))
+   (wire (path BOT 88900  -8699500 1526540 -8411160 1526540)
+    (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-14))
+    (type protect)
    )
-   (wire (path BOT 76200  -12303960 5905500 -11541960 5905500 -11541960 5689860)
-    (connect (terminal wire) (terminal pin ADS1115-1))
-   )
-   (wire (path BOT 76200  -8411160 1526540 -8699500 1526540 -8699500 1018540
-     -8411160 1018540)
-    (connect (terminal pin "RASBPBERRY 5V"-14) (terminal pin "RASBPBERRY 5V"-16))
-   )
-   (wire (path BOT 76200  -12303960 5689860 -12303960 5905500)
-    (connect (terminal pin ADS1115-4) (terminal wire))
-   )
-   (wire (path BOT 76200  -9906000 2034540 -9906000 2032000 -9715500 2032000)
+   (wire (path BOT 88900  -9906000 2034540 -9906000 2022951 -9409589 1526540
+     -8699500 1526540)
     (connect (terminal pin "RASBPBERRY 3V"-12) (terminal wire))
+    (type protect)
    )
-   (wire (path BOT 76200  -12303960 5905500 -14160500 5905500 -14160500 1529080
-     -13957300 1529080)
-    (connect (terminal wire) (terminal pin GPS-3))
+   (wire (path BOT 88900  -9906000 256540 -9144000 1018540 -8411160 1018540)
+    (connect (terminal pin "RASBPBERRY 3V"-19) (terminal pin "RASBPBERRY 5V"-16))
+    (type protect)
    )
    )
    (Net VCC/VDD 
    (rule
    )
-   (wire (path BOT 76200  -9207500 5082540 -9207500 0 -10223500 0
-     -10223500 2291080 -13957300 2291080)
+   (wire (path BOT 88900  -3111500 3698240 -3370580 3698240)
     (connect (terminal wire) (terminal pin GPS-0))
    )
-   (wire (path BOT 76200  -6454140 1285240 -6454140 1714500 -7429500 1714500
-     -7429500 5082540)
-    (connect (terminal pin VELM6070-0) (terminal wire))
+   (wire (path BOT 88900  -11351260 6804660 -11351260 2603500 -13403580 2603500
+     -13403580 1998980)
+    (connect (terminal pin SEN-2) (terminal pin VELM6070-0))
    )
-   (wire (path BOT 76200  -7429500 5082540 -8411160 5082540)
-    (connect (terminal wire) (terminal pin "RASBPBERRY 5V"-0))
-   )
-   (wire (path BOT 76200  -9207500 5082540 -9588500 5082540 -9588500 5270500
-     -10350500 5270500 -10350500 5689860 -11287960 5689860)
+   (wire (path BOT 88900  -3556000 4826000 -3556000 7620000 -3782260 7620000
+     -3782260 8046980)
     (connect (terminal wire) (terminal pin ADS1115-0))
    )
-   (wire (path BOT 76200  -5798820 5138420 -7302500 5138420 -7302500 5082540)
-    (connect (terminal pin SEN-2) (terminal wire))
-   )
-   (wire (path BOT 76200  -7302500 5082540 -7429500 5082540)
+   (wire (path BOT 88900  -3556000 4826000 -3238500 4826000)
     (connect (terminal wire) (terminal wire))
    )
-   (wire (path BOT 76200  -8411160 5082540 -9207500 5082540)
-    (connect (terminal pin "RASBPBERRY 5V"-0) (terminal wire))
+   (wire (path BOT 88900  -3238500 4826000 -3111500 4826000 -3111500 3698240)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 88900  -3111500 3698240 -2921000 3698240 -2921000 63500
+     -13403580 63500 -13403580 1998980)
+    (connect (terminal wire) (terminal pin VELM6070-0))
+   )
+   (wire (path BOT 88900  -8411160 4828540 -7937500 4828540 -7937500 4826000
+     -3556000 4826000)
+    (connect (terminal pin "RASBPBERRY 5V"-1) (terminal wire))
+   )
+   (wire (path BOT 88900  -8411160 5082540 -8411160 4828540)
+    (connect (terminal pin "RASBPBERRY 5V"-0) (terminal pin "RASBPBERRY 5V"-1))
    )
    )
    (Net {NC-1} 
-   (via PS0 -13582900 4441740 (net {NC-1} )
+   (via PS0 -6077200 6798860 (net {NC-1} )
     (type protect))
    )
    (Net {NC-2} 
-   (via PS0 -11302900 4441740 (net {NC-2} )
+   (via PS0 -3797200 6798860 (net {NC-2} )
     (type protect))
    )
    (Net {NC-3} 
-   (via PS0 -5541080 2280100 (net {NC-3} )
+   (via PS0 -12490520 2993840 (net {NC-3} )
     (type protect))
    )
    (Net {NC-4} 
-   (via PS0 -6360160 2273300 (net {NC-4} )
+   (via PS0 -13309600 2987040 (net {NC-4} )
     (type protect))
    )
    (Net {NC-5} 
